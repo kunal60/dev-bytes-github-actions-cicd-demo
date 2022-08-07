@@ -1,6 +1,5 @@
-# NestJS + Docker Example Project
+# NestJS + Docker Example + Github Actions CI deploy in dockerhub Project
 
-http://localhost:3000/
 
 build Docker image called devbutes-app. Execute from root
 docker build -t devbytes-ci-app .
