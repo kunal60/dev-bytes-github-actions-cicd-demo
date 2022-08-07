@@ -1,1 +1,3 @@
-# dev-bytes-github-actions-cicd-demo
+# NestJS + Docker Example Project
+
+http://localhost:3000/
