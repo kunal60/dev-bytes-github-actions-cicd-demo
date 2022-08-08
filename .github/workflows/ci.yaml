@@ -8,10 +8,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Build and Push Docker Image
-        uses: mr-smithers-excellent/docker-build-push@v4
+      - name: Build and Push Docker Image  #Here we have a choice of running the commands or using an action
+        # run: |
+        #   docker login cred
+        #   docker build
+        uses: mr-smithers-excellent/docker-build-push@v4 # https://github.com/marketplace/actions/docker-build-push-action
         with:
           image: kunal400/devbytes-cicd-demo
+          tags: v1, latest
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_USERNAME }} # In github repo settings secrets of this repo
           password: ${{ secrets.DOCKER_PASSWORD }}
