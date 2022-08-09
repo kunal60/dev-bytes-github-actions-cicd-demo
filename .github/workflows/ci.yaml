@@ -17,5 +17,5 @@ jobs:
           image: kunal400/devbytes-cicd-demo
           tags: v1, latest
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }} # In github repo settings secrets of this repo
+          username: ${{ secrets.DOCKER_USERNAME }} # In github repo settings secrets of this repo...
           password: ${{ secrets.DOCKER_PASSWORD }}
